@@ -83,7 +83,7 @@
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">COMBO FAJ DILLA <br> 9.49</button>
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">SHIRLY GOO <br> 8.29</button>
 			</div>
-			<button class="special_button_4" type="button" style="background-image: url('arrow_down_2.png');" onclick="menu('1/2Apps')"><span>1/2</span></button>
+			<button class="special_button_4" type="button" style="background-image: url('arrow_down_2.png');" onclick="menu('1/2Apps',true)"><span>1/2</span></button>
 		</div>
 		<div class="1/2Apps" style="visibility:hidden">
 			<div class="btn-group" style="left:55.6%">
@@ -112,7 +112,7 @@
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">**NACHO CAR BN</button>
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">**NACHO CAR QUE</button>
 			</div>
-			<button class="special_button_4" type="button" style="background-image: url('arrow_up_2.png')" onclick="menu('Apps')"><span style='left:10%'>FULL</span></button>
+			<button class="special_button_4" type="button" style="background-image: url('arrow_up_2.png')" onclick="menu('Apps',true)"><span style='left:10%'>FULL</span></button>
 		</div>
 		<div class="Salads Soups" style="visibility:hidden">
 			<div class="btn-group" style="left:55.6%">
@@ -316,15 +316,6 @@
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">MACHO BURRRITO <br> 10.69</button>
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">PORK BOOM BOOM <br> 10.89</button>
 			</div>
-			<div class="btn-subgroup" style="left:55.6%;width: 5.1%;height: 90%">
-				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">1/2 AVACADO ENC <br> 8.79</button>
-				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">1/2 GC CK FLAUTA <br> 8.29</button>
-				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">1/2 HATCH BF TA <br> 7.19</button>
-				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">1/2 PORK TACOS <br> 7.19</button>
-				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">1/2 VELVET ENCH</button>
-				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">1/2PRK BOOM BOOM <br> 8.89</button>
-				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">MINI MACHO BURR <br> 8.69</button>
-			</div>
 			<div class="btn-group" style="left:60.9%">
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">PORK TACOS <br> 9.19</button>
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">STUFFED AVOCADO <br> 10.69</button>
@@ -334,16 +325,27 @@
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">SOPA BF FAJJITA <br> 10.69</button>
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">SOPA CHICKEN <br> 9.99</button>
 			</div>
-			<div class="btn-subgroup" style="left:60.9%;width: 5.1%;height: 90%">
-				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">MINI WILD BURRI <br> 8.69</button>
-			</div>
 			<div class="btn-group" style="left:66.2%">
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">SOPA GUISADA <br> 9.99</button>
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">SOPA VEGGIE <br> 8.99</button>
 			</div>
-			<button class="special_button_4" type="button" id="1/2SPEC" onclick="menu('1/2SPEC')" style="background-image: url('arrow_down_2.png');"><span>1/2</span></button>
-			<button class="special_button_4" type="button" id="FULLSPEC" onclick="menu('1/2SPEC')" style="visibility:hidden;background-image: url('arrow_up_2.png')"><span style='left:10%'>FULL</span></button>
+			<button class="special_button_4" type="button" onclick="menu('1/2Specials',true)" style="background-image: url('arrow_down_2.png');"><span>1/2</span></button>
 		
+		</div>
+		<div class="1/2Specials" style="visibility:hidden">
+			<div class="btn-group" style="left:55.6%">
+				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">1/2 AVACADO ENC <br> 8.79</button>
+				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">1/2 GC CK FLAUTA <br> 8.29</button>
+				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">1/2 HATCH BF TA <br> 7.19</button>
+				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">1/2 PORK TACOS <br> 7.19</button>
+				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">1/2 VELVET ENCH</button>
+				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">1/2PRK BOOM BOOM <br> 8.89</button>
+				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">MINI MACHO BURR <br> 8.69</button>
+			</div>
+			<div class="btn-group" style="left:60.9%">
+				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">MINI WILD BURRI <br> 8.69</button>
+			</div>
+			<button class="special_button_4" type="button" onclick="menu('Specials',true)" style="visibility:hidden;background-image: url('arrow_up_2.png')"><span style='left:10%'>FULL</span></button>
 		</div>
 		<div class="Kids" style="visibility:hidden">
 			<div class="btn-group" style="left:55.6%">
@@ -837,9 +839,13 @@
 		</div>
 		<div class="drink_menu_2">
 			<button class="item_button" type="button_3" style="position:absolute;top:78%;left:45%;width:10.5%;height:10%;background-color:#b29e7d">BAR PREPS</button>
+			<button class="item_button Beer" type="button_3" style="position:absolute;top:78%;left:45%;width:10.5%;height:10%;color:red;background-color:#aeaeba;visibility:hidden">Beer Mods</button>
 			<button class="special_button" type="button" style="position:absolute;top:88%;left:45%;width:10.5%">Spec Instructions</button>
-			<button class="button_4" type="button" style="position:absolute;top:88%;left:55.5%;width:8%;height:7.5%">Repeat Round</button>
-			<button class="button_4" type="button" style="position:absolute;top:88%;left:68.5%;width:8%;height:7.5%">Reorder</button>
+			<button class="button_4 drink_menu_3" type="button" style="position:absolute;top:88%;left:55.5%;width:8%;height:7.5%">Repeat Round</button>
+			<button class="button_4 drink_menu_3" type="button" style="position:absolute;top:88%;left:68.5%;width:8%;height:7.5%">Reorder</button>
+			<button class="button_4 Margaritas" type="button" style="position:absolute;top:88%;left:55.5%;width:7%;height:7.5%;visibility:hidden">Repeat Round</button>
+			<button class="button_4 Margaritas" type="button" style="position:absolute;top:88%;left:62.5%;width:7%;height:7.5%;visibility:hidden">Reorder</button>
+			<button class="button_4 Margaritas" type="button" style="position:absolute;top:88%;left:69.5%;width:7%;height:7.5%;color:red;visibility:hidden">Floaters</button>
 		</div>
 		<div class="btn-group" style="left:20.2%;top:74.5%">
 			<button class="button_3" type="button" style="background-color:#b29e7d;color:black">G1</button>

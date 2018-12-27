@@ -1,18 +1,23 @@
-function menu(button_name) { //Toggle between menu selections
-	document.getElementById(buttons[0].className).style.backgroundColor = menu_background_color;
-	document.getElementById(buttons[0].className).style.color = menu_color;
+function menu(button_name,submenu) { //Toggle between menu selections
+	submenu=submenu||false
+	if(!submenu){
+		document.getElementById(buttons[0].className.replace('1/2','')).style.backgroundColor = menu_background_color;
+		document.getElementById(buttons[0].className.replace('1/2','')).style.color = menu_color;
+	}
 	for(var i = 0; i < buttons.length; i++){
 		buttons[i].style.visibility = 'hidden';
 	}
 	buttons = document.getElementsByClassName(button_name);
-	menu_background_color = window.getComputedStyle(document.getElementById(button_name),null).getPropertyValue('background-color');
-	menu_color = window.getComputedStyle(document.getElementById(button_name),null).getPropertyValue('color');
-	document.getElementById(buttons[0].className).style.backgroundColor = "#a1a9bc";
-	document.getElementById(buttons[0].className).style.color = "black";
+	if(!submenu){
+		menu_background_color = window.getComputedStyle(document.getElementById(button_name),null).getPropertyValue('background-color');
+		menu_color = window.getComputedStyle(document.getElementById(button_name),null).getPropertyValue('color');
+		document.getElementById(buttons[0].className).style.backgroundColor = "#a1a9bc";
+		document.getElementById(buttons[0].className).style.color = "black";
+	}
 	for(var i = 0; i < buttons.length; i++){
 		buttons[i].style.visibility = 'visible';
 	}
-	toggle_drink('button' != document.getElementById(button_name).className);
+	if(!submenu) toggle_drink(document.getElementById(button_name).className != 'button');
 }
 
 var buttons = document.getElementsByClassName('House Spec'); //Initialize menu to House Specials
@@ -44,6 +49,15 @@ function arrow(arrow_id){ //Toggle menu buttons
 }
 
 function toggle_drink(state){ //Toggle drink menu buttons
+	console.log(document.getElementsByClassName('Margaritas')[0]);
+	if(!state || window.getComputedStyle(document.getElementsByClassName('Margaritas')[0], null).getPropertyValue('visibility') == 'visible'){
+		document.getElementsByClassName('drink_menu_3')[0].style.visibility = 'hidden';
+		document.getElementsByClassName('drink_menu_3')[1].style.visibility = 'hidden';
+	}
+	else{
+		document.getElementsByClassName('drink_menu_3')[0].style.visibility = 'visible';
+		document.getElementsByClassName('drink_menu_3')[1].style.visibility = 'visible';
+	}
 	var buttons = document.getElementsByClassName('drink_menu');
 	for (var i = 0; i < buttons.length; i++) {
 		if (state) {
