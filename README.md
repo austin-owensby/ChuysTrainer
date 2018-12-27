@@ -2,8 +2,7 @@
 Right now I'm just trying to make the menu interact as it normally would with some limitations I deem necessary  
 (No table selection, No payment of checks (maybe later??), etc.) 
 
-Currently Working on:  
-* Adding rest of main submenus page 2 (sides, margaritas, and mixed drinks)  
+Currently Working on:   
 
 Upcoming (In no particular order):  
 * Yellow bar functionality

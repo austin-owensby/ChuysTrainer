@@ -49,8 +49,7 @@ function arrow(arrow_id){ //Toggle menu buttons
 }
 
 function toggle_drink(state){ //Toggle drink menu buttons
-	console.log(document.getElementsByClassName('Margaritas')[0]);
-	if(!state || window.getComputedStyle(document.getElementsByClassName('Margaritas')[0], null).getPropertyValue('visibility') == 'visible'){
+	if(!state || window.getComputedStyle(document.getElementsByClassName('Margaritas')[0], null).getPropertyValue('visibility') == 'visible' || window.getComputedStyle(document.getElementsByClassName('1/2Margaritas')[0], null).getPropertyValue('visibility') == 'visible'){
 		document.getElementsByClassName('drink_menu_3')[0].style.visibility = 'hidden';
 		document.getElementsByClassName('drink_menu_3')[1].style.visibility = 'hidden';
 	}
@@ -62,12 +61,10 @@ function toggle_drink(state){ //Toggle drink menu buttons
 	for (var i = 0; i < buttons.length; i++) {
 		if (state) {
 			document.getElementsByClassName('drink_menu')[i].style.visibility = 'hidden';
-			document.getElementById('reorder').innerHTML = '';
-			document.getElementById('reorder').style.backgroundColor = '#dbc5b8';
+			document.getElementById('reorder').style.visibility = 'hidden';
 		} else {
 			document.getElementsByClassName('drink_menu')[i].style.visibility = 'visible';
-			document.getElementById('reorder').innerHTML = 'Reorde<br>r';
-			document.getElementById('reorder').style.backgroundColor = '#98ade2';
+			document.getElementById('reorder').style.visibility = 'visible';
 		}
 	}
 	buttons = document.getElementsByClassName('drink_menu_2');
