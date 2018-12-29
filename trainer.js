@@ -30,7 +30,7 @@ function menu(button_name,submenu,special) { //Toggle between menu selections
 		count++;
 		if(count == 3){
 			count = 0;
-			menu('Taco',true);
+			menu('Tacos',true);
 			clear_menu(false);
 		}
 	}
