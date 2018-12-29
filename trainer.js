@@ -1,5 +1,12 @@
-function menu(button_name,submenu) { //Toggle between menu selections
-	submenu=submenu||false
+var count = 0;
+var previous;
+function menu(button_name,submenu,special) { //Toggle between menu selections
+	submenu=submenu||false;
+	special=special||false;
+	if(special && (button_name == 'House Spec' || button_name == 'Burritos' || button_name == 'Enchiladas')){
+		previous = button_name;
+		button_name = 'SAUCES';
+	}
 	if(!submenu){
 		document.getElementById(buttons[0].className.replace('1/2','')).style.backgroundColor = menu_background_color;
 		document.getElementById(buttons[0].className.replace('1/2','')).style.color = menu_color;
@@ -18,6 +25,15 @@ function menu(button_name,submenu) { //Toggle between menu selections
 		buttons[i].style.visibility = 'visible';
 	}
 	if(!submenu) toggle_drink(document.getElementById(button_name).className != 'button');
+	if(special) clear_menu(true);
+	if(button_name == 'COMBO TACOS'){
+		count++;
+		if(count == 3){
+			count = 0;
+			menu('Tacos',true);
+			clear_menu(false);
+		}
+	}
 }
 
 var buttons = document.getElementsByClassName('House Spec'); //Initialize menu to House Specials
@@ -121,6 +137,71 @@ function toggle_drink(state){ //Toggle drink menu buttons
 		}
 		else{
 			spec.visibility = 'visible';
+		}
+	}
+}
+
+function clear_menu(state){
+	if(state){
+		document.getElementsByClassName('margarita')[0].style.visibility = 'hidden';
+		document.getElementsByClassName('beverage')[0].style.visibility = 'hidden';
+		document.getElementById('reorder').style.visibility = 'hidden';
+		var buttons = document.getElementsByClassName('drink_menu');
+		for (var i = 0; i < buttons.length; i++) {
+			buttons[i].style.visibility = 'hidden';
+		}
+		buttons = document.getElementsByClassName('drink_menu_2');
+		for (var i = 0; i < buttons.length; i++) {
+			buttons[i].style.visibility = 'hidden';
+		}
+		buttons = document.getElementsByClassName('button');
+		for (var i = 0; i < buttons.length; i++) {
+			buttons[i].style.visibility = 'hidden';
+		}
+		buttons = document.getElementsByClassName('button_2');
+		for (var i = 0; i < buttons.length; i++) {
+			buttons[i].style.visibility = 'hidden';
+		}
+		buttons = document.getElementsByClassName('arrow_button');
+		for (var i = 0; i < buttons.length; i++) {
+			buttons[i].style.visibility = 'hidden';
+		}
+		buttons = document.getElementsByClassName('sub_menu');
+		for (var i = 0; i < buttons.length; i++) {
+			buttons[i].style.visibility = 'visible';
+		}
+	} else{
+		document.getElementsByClassName('margarita')[0].style.visibility = 'visible';
+		document.getElementsByClassName('beverage')[0].style.visibility = 'visible';
+		document.getElementById('reorder').style.visibility = 'visible';
+		var buttons = document.getElementsByClassName('drink_menu');
+		for (var i = 0; i < buttons.length; i++) {
+			buttons[i].style.visibility = 'visible';
+		}
+		buttons = document.getElementsByClassName('button');
+		for (var i = 0; i < buttons.length; i++) {
+			buttons[i].style.visibility = 'visible';
+		}
+		buttons = document.getElementsByClassName('button_2');
+		for (var i = 0; i < buttons.length; i++) {
+			buttons[i].style.visibility = 'visible';
+		}
+		buttons = document.getElementsByClassName('arrow_button');
+		for (var i = 0; i < buttons.length; i++) {
+			buttons[i].style.visibility = 'visible';
+		}
+		Buttons = document.getElementsByClassName('btn-subgroup');
+		buttons = Buttons[0].getElementsByClassName('button');
+		for (var i = 0; i < buttons.length; i++) {
+			buttons[i].style.visibility = 'hidden';
+		}
+		buttons = Buttons[1].getElementsByClassName('button_2');
+		for (var i = 0; i < buttons.length; i++) {
+			buttons[i].style.visibility = 'hidden';
+		}
+		buttons = document.getElementsByClassName('sub_menu');
+		for (var i = 0; i < buttons.length; i++) {
+			buttons[i].style.visibility = 'hidden';
 		}
 	}
 }

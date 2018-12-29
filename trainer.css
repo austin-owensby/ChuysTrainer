@@ -37,6 +37,7 @@ button:focus {outline:0;}
 .special_button_3,
 .special_button_4,
 .item_button,
+.item_button_2,
 .modify,
 .beverage,
 .margarita {
@@ -50,7 +51,7 @@ button:focus {outline:0;}
   padding: 0;
   width: 100%;
   display: block;
-  border-radius: 15%;
+  border-radius: 10%;
   font-weight: bold;
   margin: 2px 0;
 }
@@ -117,6 +118,11 @@ button:focus {outline:0;}
 .item_button {
   background-color: #e5c864;
   color: black;
+  height: 11.9%;
+}
+
+.item_button_2 {
+  background-color: #1a1f49;
   height: 11.9%;
 }
 
