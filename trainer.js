@@ -30,7 +30,25 @@ function menu(button_name,submenu,special) { //Toggle between menu selections
 		count++;
 		if(count == 3){
 			count = 0;
-			menu('Tacos',true);
+			menu('Taco',true);
+			clear_menu(false);
+		}
+	}
+	if(button_name == 'COMBO ENCH' && previous == 'COMBO ENCH') clear_menu(true);
+	if(button_name == 'COMBO ENCH'){
+		count++;
+		if(count == 3){
+			count = 0;
+			menu('Enchiladas',true);
+			clear_menu(false);
+		}
+	}
+	if(button_name == 'COMBO RELLENO' && previous == 'COMBO RELLENO') clear_menu(true);
+	if(button_name == 'COMBO RELLENO'){
+		count++;
+		if(count == 3){
+			count = 0;
+			menu('House Spec',true);
 			clear_menu(false);
 		}
 	}
