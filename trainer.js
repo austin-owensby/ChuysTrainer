@@ -5,7 +5,9 @@ function menu(button_name,submenu,special) { //Toggle between menu selections
 	special=special||false;
 	if(special && (button_name == 'House Spec' || button_name == 'Burritos' || button_name == 'Enchiladas')){
 		previous = button_name;
-		button_name = 'SAUCES';
+		if(submenu)button_name = 'SAUCES';
+		else button_name = '1/2SAUCES';
+		submenu = true;
 	}
 	if(!submenu){
 		document.getElementById(buttons[0].className.replace('1/2','')).style.backgroundColor = menu_background_color;
@@ -33,13 +35,34 @@ function menu(button_name,submenu,special) { //Toggle between menu selections
 			menu('Tacos',true);
 			clear_menu(false);
 		}
+		if(count == 5){
+			count = 0;
+			menu('Soups Salads',true);
+			clear_menu(false);
+		}
 	}
 	if(button_name == 'COMBO ENCH' && previous == 'COMBO ENCH') clear_menu(true);
 	if(button_name == 'COMBO ENCH'){
 		count++;
-		if(count == 3){
+		if(count == 3 || count == 8){
 			count = 0;
 			menu('Enchiladas',true);
+			clear_menu(false);
+		}
+		if(count == 6){
+			count = 0;
+			menu('Combos',true);
+			clear_menu(false);
+		}
+		if(count == 10){
+			count = 0;
+			menu('A La Carte',true);
+			clear_menu(false);
+			arrow(1);
+		}
+		if(count == 12){
+			count = 0;
+			menu('Soups Salads',true);
 			clear_menu(false);
 		}
 	}
@@ -51,7 +74,20 @@ function menu(button_name,submenu,special) { //Toggle between menu selections
 			menu('House Spec',true);
 			clear_menu(false);
 		}
+		if(count == 5){
+			count = 0;
+			menu('A La Carte',true);
+			clear_menu(false);
+			arrow(1)
+		}
+		if(count == 7){
+			count = 0;
+			menu('Soups Salads',true);
+			clear_menu(false);
+		}
 	}
+	if(previous == 'Specials' && !special && submenu) arrow(1);
+	if(previous == 'A La Carte' && !special && submenu) arrow(1);
 }
 
 var buttons = document.getElementsByClassName('House Spec'); //Initialize menu to House Specials

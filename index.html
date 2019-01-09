@@ -141,10 +141,10 @@
 		</div>
 		<div class="TMSalad" style="visibility:hidden">
 			<div class="btn-group" style="left:55.6%">
-				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML);menu('Salads Soups',true)">TACO</button>
-				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML);menu('Salads Soups', true)">ENCHILADA</button>
-				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML);menu('Salads Soups', true)">MINI BURRITO</button>
-				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML);menu('Salads Soups', true)">RELLENO</button>
+				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML);menu('Salads Soups',true);menu('COMBO TACOS',true,true);count=4">TACO</button>
+				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML);menu('COMBO ENCH',true,true);count=11">ENCHILADA</button>
+				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML);menu('ALA BURR',true,true);previous='Salads Soups'">MINI BURRITO</button>
+				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML);menu('Salads Soups', true);menu('COMBO RELLENO',true,true);count=6">RELLENO</button>
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML);menu('Salads Soups', true)">1/2 CK DILLA</button>
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML);menu('Salads Soups', true)">FLAUTA</button>
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML);menu('Salads Soups', true)">SOUP</button>
@@ -166,10 +166,10 @@
 			</div>
 			<div class="btn-group" style="left:60.9%">
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">BEAN CHALUPA 6.29</button>
-				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">1/2-BEEF RELLEN 7.99</button>
-				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">1/2-CK RELLENO 7.99</button>
-				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">1/2-CZ RELLENO 7.89</button>
-				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">1/2-SHRIMP RELL <br> 8.19</button>
+				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML);menu('House Spec',false,true)">1/2-BEEF RELLEN 7.99</button>
+				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML);menu('House Spec',false,true)">1/2-CK RELLENO 7.99</button>
+				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML);menu('House Spec',false,true)">1/2-CZ RELLENO 7.89</button>
+				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML);menu('House Spec',false,true)">1/2-SHRIMP RELL <br> 8.19</button>
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">1/2 FLAUTA 6.79</button>
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">BEEF CHALUPAS 7.29</button>
 			</div>
@@ -182,11 +182,11 @@
 		</div>
 		<div class="COMBO RELLENO" style="visibility:hidden">
 			<div class="btn-group" style="left:45%;top:8%">
-				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('SAUCES',true,true);previous='COMBO RELLENO'">BACON RELLENO</button>
-				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('SAUCES',true,true);previous='COMBO RELLENO'">BEEF</button>
-				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('SAUCES',true,true);previous='COMBO RELLENO'">CHEESE</button>
-				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('SAUCES',true,true);previous='COMBO RELLENO'">CHICKEN</button>
-				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('SAUCES',true,true);previous='COMBO RELLENO'">SHRIMP</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('1/2SAUCES',true,true);previous='COMBO RELLENO'">BACON RELLENO</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('1/2SAUCES',true,true);previous='COMBO RELLENO'">BEEF</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('1/2SAUCES',true,true);previous='COMBO RELLENO'">CHEESE</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('1/2SAUCES',true,true);previous='COMBO RELLENO'">CHICKEN</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('1/2SAUCES',true,true);previous='COMBO RELLENO'">SHRIMP</button>
 			</div>
 		</div>
 		<div class="Combos" style="visibility:hidden">
@@ -194,10 +194,10 @@
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">#1 COMIDA 11.29</button>
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">#2 ELVIS COMBO 11.69</button>
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">#3 TACO/ENCH 8.99</button>
-				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">#4 RELL BEEF <br> 9.69</button>
-				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">#4 RELL CHEESE 9.69</button>
-				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">#4 RELL CHICKEN 9.69</button>
-				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">#4 RELL SHRIMP <br> 9.69</button>
+				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML);menu('1/2SAUCES',true,true);previous='COMBO ENCH';count = 4;">#4 RELL BEEF <br> 9.69</button>
+				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML);menu('1/2SAUCES',true,true);previous='COMBO ENCH';count = 4;">#4 RELL CHEESE 9.69</button>
+				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML);menu('1/2SAUCES',true,true);previous='COMBO ENCH';count = 4;">#4 RELL CHICKEN 9.69</button>
+				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML);menu('1/2SAUCES',true,true);previous='COMBO ENCH';count = 4;">#4 RELL SHRIMP <br> 9.69</button>
 			</div>
 			<div class="btn-group" style="left:60.9%">
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">#5 CHAL/ENCH 9.29</button>
@@ -220,16 +220,16 @@
 			</div>
 			<div class="btn-group" style="left:60.9%">
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML);menu('Burritos',true,true)">VEGGIE BURRITO 8.99</button>
-				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">MINI BEAN BURR <br>6.89</button>
-				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">MINI BF BURR <br> 7.29</button>
-				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">MINI CK BUR <br> 7.99</button>
-				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">MINI CK FAJ BURR <br> 8.69</button>
-				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">MINI BF FAJ BURR <br> 8.69</button>
-				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">MINI COMB FJ BU <br> 8.69</button>
+				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML);menu('Burritos',false,true)">MINI BEAN BURR <br>6.89</button>
+				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML);menu('Burritos',false,true)">MINI BF BURR <br> 7.29</button>
+				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML);menu('Burritos',false,true)">MINI CK BUR <br> 7.99</button>
+				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML);menu('Burritos',false,true)">MINI CK FAJ BURR <br> 8.69</button>
+				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML);menu('Burritos',false,true)">MINI BF FAJ BURR <br> 8.69</button>
+				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML);menu('Burritos',false,true)">MINI COMB FJ BU <br> 8.69</button>
 			</div>
 			<div class="btn-group" style="left:66.2%">
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">MINI STEAK BURR <br> 8.99</button>
-				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">MINI VEG BUR <br> 6.99</button>
+				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML);menu('Burritos',false,true)">MINI VEG BUR <br> 6.99</button>
 			</div>
 		</div>
 		<div class="Enchiladas" style="visibility:hidden">
@@ -249,15 +249,15 @@
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">VEGGIE ENCH <br> 8.89</button>
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">911 ENCHILADA<br>S <br>9.79</button>
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML);menu('COMBO ENCH',true,true)">COMBO ENCH <br> 9.79</button>
-				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">1/2 BEEF ENCH <br> 7.79</button>
+				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML);menu('Enchiladas',false,true)">1/2 BEEF ENCH <br> 7.79</button>
 			</div>
 			<div class="btn-group" style="left:66.2%">
-				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">1/2 BF FAJ ENCH <br> 8.79</button>
-				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">1/2 CHEESE ENCH <br> 7.79</button>
-				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">1/2 CHICKEN ENC <br> 7.59</button>
+				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML);menu('Enchiladas',false,true)">1/2 BF FAJ ENCH <br> 8.79</button>
+				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML);menu('Enchiladas',false,true)">1/2 CHEESE ENCH <br> 7.79</button>
+				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML);menu('Enchiladas',false,true)">1/2 CHICKEN ENC <br> 7.59</button>
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">1/2 STACKED ENC <br> 7.59</button>
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">1/2CK BOOM BOOM <br> 8.89</button>				
-				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">1/2 CK FAJ ENCH <br> 7.79</button>
+				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML);menu('Enchiladas',false,true)">1/2 CK FAJ ENCH <br> 7.79</button>
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">1/2 CLASSIC TEX <br> 7.29</button>
 			</div>
 			<div class="btn-group" style="left:71.5%">
@@ -265,33 +265,33 @@
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">1/2 SW ENCH <br> 7.99</button>
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">1/2 VEG ENC <br> 6.89</button>
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">1/2 911 ENC <br> 7.79</button>
-				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">$$ADD ENCH <br> 3.00</button>				
+				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML);menu('COMBO ENCH',true,true);count=7">$$ADD ENCH <br> 3.00</button>				
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">DINNER TACO<br> 3.29</button>
 			</div>
 		</div>
 		<div class="COMBO ENCH" style="visibility:hidden">
 			<div class="btn-group" style="left:45%;top:8%">
-				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('SAUCES',true,true);previous='COMBO ENCH'">$$BF FAJ ENCH<br> 0.50</button>
-				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('SAUCES',true,true);previous='COMBO ENCH'">BEEF</button>
-				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('SAUCES',true,true);previous='COMBO ENCH'">CHEESE</button>
-				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('SAUCES',true,true);previous='COMBO ENCH'">CHICKEN</button>
-				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('SAUCES',true,true);previous='COMBO ENCH'">CK FAJ ENCH</button>
-				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('SAUCES',true,true);previous='COMBO ENCH'">CLASSIC</button>
-				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('SAUCES',true,true);previous='COMBO ENCH'">COMBO</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('1/2SAUCES',true,true);previous='COMBO ENCH'">$$BF FAJ ENCH<br> 0.50</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('1/2SAUCES',true,true);previous='COMBO ENCH'">BEEF</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('1/2SAUCES',true,true);previous='COMBO ENCH'">CHEESE</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('1/2SAUCES',true,true);previous='COMBO ENCH'">CHICKEN</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('1/2SAUCES',true,true);previous='COMBO ENCH'">CK FAJ ENCH</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('1/2SAUCES',true,true);previous='COMBO ENCH'">CLASSIC</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('1/2SAUCES',true,true);previous='COMBO ENCH'">COMBO</button>
 			</div>
 			<div class="btn-group" style="left:50.3%;top:8%">
-				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('SAUCES',true,true);previous='COMBO ENCH'">FAT DADDY 0.30</button>
-				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('SAUCES',true,true);previous='COMBO ENCH'">FISH<br> 1.00</button>
-				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('SAUCES',true,true);previous='COMBO ENCH'">FRITO PIE</button>
-				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('SAUCES',true,true);previous='COMBO ENCH'">GUISADA</button>
-				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('SAUCES',true,true);previous='COMBO ENCH'">PORK</button>
-				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('SAUCES',true,true);previous='COMBO ENCH'">RIO GRANDE</button>
-				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('SAUCES',true,true);previous='COMBO ENCH'">SHRIMP<br> 1.00</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('1/2SAUCES',true,true);previous='COMBO ENCH'">FAT DADDY 0.30</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('1/2SAUCES',true,true);previous='COMBO ENCH'">FISH<br> 1.00</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('1/2SAUCES',true,true);previous='COMBO ENCH'">FRITO PIE</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('1/2SAUCES',true,true);previous='COMBO ENCH'">GUISADA</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('1/2SAUCES',true,true);previous='COMBO ENCH'">PORK</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('1/2SAUCES',true,true);previous='COMBO ENCH'">RIO GRANDE</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('1/2SAUCES',true,true);previous='COMBO ENCH'">SHRIMP<br> 1.00</button>
 			</div>
 			<div class="btn-group" style="left:55.6%;top:8%">
-				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('SAUCES',true,true);previous='COMBO ENCH'">SOUTHWES<br>T</button>
-				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('SAUCES',true,true);previous='COMBO ENCH'">STACKED ENCHILA</button>
-				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('SAUCES',true,true);previous='COMBO ENCH'">VEGGIE</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('1/2SAUCES',true,true);previous='COMBO ENCH'">SOUTHWES<br>T</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('1/2SAUCES',true,true);previous='COMBO ENCH'">STACKED ENCHILA</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('1/2SAUCES',true,true);previous='COMBO ENCH'">VEGGIE</button>
 			</div>
 		</div>
 		<div class="Fajitas" style="visibility:hidden">
@@ -301,7 +301,7 @@
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">1/2 COMBO FAJ <br> 14.39</button>
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">1/2 VEG FAJ <br> 13.89</button>
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">1/2 SET UP <br> 3.49</button>
-				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">1/2LB FAJ MEAT O <br> 9.89</button>
+				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML);menu('MEAT',true,true)">1/2LB FAJ MEAT O <br> 9.89</button>
 				<button class="item_button" type="button" style="background-image: url('xmark.png');background-size: 70%; background-repeat: no-repeat;background-position: center"></button>
 			</div>
 			<div class="btn-group" style="left:60.9%">
@@ -310,13 +310,20 @@
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">COMBO FAJITA <br> 26.49</button>
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">VEGGIE FAJITAS <br> 25.69</button>
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">FULL<br> SET-UP <br> 4.49</button>
-				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">1-LB FAJ MEAT O <br> 19.89</button>
+				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML);menu('MEAT',true, true)">1-LB FAJ MEAT O <br> 19.89</button>
 				<button class="item_button" type="button" style="background-image: url('xmark.png');background-size: 70%; background-repeat: no-repeat;background-position: center"></button>
 			</div>
 			<div class="btn-group" style="left:66.2%">
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">*Corn Torts</button>
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">*Blue Corn</button>
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">*Flour Torts</button>
+			</div>
+		</div>
+		<div class="MEAT" style="visibility:hidden">
+			<div class="btn-group" style="left:45%;top:8%">
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('Fajitas',true);clear_menu(false)">Faj Beef</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('Fajitas',true);clear_menu(false)">Faj Chicken</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('Fajitas',true);clear_menu(false)">Faj Combo</button>
 			</div>
 		</div>
 		<div class="Tacos" style="visibility:hidden">
@@ -394,14 +401,14 @@
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">PORK TACOS <br> 9.19</button>
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">STUFFED AVOCADO <br> 10.69</button>
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">WILD BURRITO <br> 10.69</button>
-				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">SOPA BEAN <br> 8.89</button>
-				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">SOPA BEEF <br> 9.29</button>
-				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">SOPA BF FAJJITA <br> 10.69</button>
-				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">SOPA CHICKEN <br> 9.99</button>
+				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML);menu('1/2SAUCES',true,true);previous='Specials'">SOPA BEAN <br> 8.89</button>
+				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML);menu('1/2SAUCES',true,true);previous='Specials'">SOPA BEEF <br> 9.29</button>
+				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML);menu('1/2SAUCES',true,true);previous='Specials'">SOPA BF FAJJITA <br> 10.69</button>
+				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML);menu('1/2SAUCES',true,true);previous='Specials'">SOPA CHICKEN <br> 9.99</button>
 			</div>
 			<div class="btn-group" style="left:66.2%">
-				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">SOPA GUISADA <br> 9.99</button>
-				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">SOPA VEGGIE <br> 8.99</button>
+				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML);menu('1/2SAUCES',true,true);previous='Specials'">SOPA GUISADA <br> 9.99</button>
+				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML);menu('1/2SAUCES',true,true);previous='Specials'">SOPA VEGGIE <br> 8.99</button>
 			</div>
 			<button class="special_button_4" type="button" onclick="menu('1/2Specials',true)" style="background-image: url('arrow_down_2.png');"><span>1/2</span></button>
 		
@@ -513,18 +520,18 @@
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML);menu(this.innerHTML,true,true)">'ALA TACO</button>
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">ALA BF LUPA <br> 3.35</button>
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">ALA BN LUPA <br> 2.89</button>
-				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">ALA BURR MINI <br> 5.99</button>
+				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML);menu('ALA BURR',true,true);previous='A La Carte'">ALA BURR MINI <br> 5.99</button>
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">ALA CK BREAST <br> 5.83</button>
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">ALA CK DILLA <br> 2.25</button>
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">ALA CK LUPA <br> 3.35</button>
 			</div>
 			<div class="btn-group" style="left:60.9%">
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">ALA CZ DILLA<br> 1.90</button>
-				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">ALA ENCHILADA <br> 4.01</button>
+				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML);menu('COMBO ENCH',true,true);count=9">ALA ENCHILADA <br> 4.01</button>
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">ALA FAJ BEEF DI<br> 2.50</button>
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">ALA FLAUTA <br> 2.64</button>
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">ALA NACHO <br> 2.31</button>
-				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">ALA RELLENO <br> 4.10</button>
+				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML);menu('COMBO RELLENO',true,true);count=4">ALA RELLENO <br> 4.10</button>
 				<button class="item_button" type="button" onclick="add_to_order(this.innerHTML)">ALA TAQUITO <br> 2.76</button>
 			</div>
 			<div class="btn-group" style="left:66.2%">
@@ -551,6 +558,23 @@
 				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('A La Carte',true);clear_menu(false);arrow(1)">Ala Soft Ck Tac 3.60</button>
 				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('A La Carte',true);clear_menu(false);arrow(1)">Ala Soft Faj Bf 4.00</button>
 				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('A La Carte',true);clear_menu(false);arrow(1)">Ala Soft Guac 3.60</button>
+			</div>
+		</div>
+		<div class="ALA BURR" style="visibility:hidden">
+			<div class="btn-group" style="left:45%;top:8%">
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('1/2SAUCES',true,true)">$$Faj Bf <br> 1.00</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('1/2SAUCES',true,true)">$$Faj Chk <br> 1.00</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('1/2SAUCES',true,true)">Bean</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('1/2SAUCES',true,true)">Beef</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('1/2SAUCES',true,true)">Chicken</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('1/2SAUCES',true,true)">Guac</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('1/2SAUCES',true,true)">Guisada</button>
+			</div>
+			<div class="btn-group" style="left:50.3%;top:8%">
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('1/2SAUCES',true,true)">Mini Macho Burr</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('1/2SAUCES',true,true)">Mini Wild Burr</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('1/2SAUCES',true,true)">Steak</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('1/2SAUCES',true,true)">Veg</button>
 			</div>
 		</div>
 		<div class="Desserts" style="visibility:hidden">
@@ -601,6 +625,41 @@
 				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);clear_menu(false);menu(previous,true)">RANCHERO</button>
 				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);clear_menu(false);menu(previous,true)">RED CHILE</button>
 				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);clear_menu(false);menu(previous,true)">RICA</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);clear_menu(false);menu(previous,true)">ROSADO</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);clear_menu(false);menu(previous,true)">TEX MEX</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);clear_menu(false);menu(previous,true)">TOMATILLO</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);clear_menu(false);menu(previous,true)">NO SAUCE</button>
+			</div>
+		</div>
+		<div class="1/2SAUCES" style="visibility:hidden">
+			<div class="btn-group" style="left:45%;top:8%">
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);clear_menu(false);menu(previous,true)">$$1/2 AVO SAUCE<br> 0.50</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);clear_menu(false);menu(previous,true)">$$1/2 BOOM BOOM<br> 0.50</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);clear_menu(false);menu(previous,true)">$$1/2 QUESO<br> 0.50</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);clear_menu(false);menu(previous,true)">BLANCAS</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);clear_menu(false);menu(previous,true)">CHILE CON CARNE</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);clear_menu(false);menu(previous,true)">CHIPOTLE</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);clear_menu(false);menu(previous,true)">COSTENA</button>
+			</div>
+			<div class="btn-group" style="left:50.3%;top:8%">
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);clear_menu(false);menu(previous,true)">CRMY JAP</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);clear_menu(false);menu(previous,true)">DLX TOMATILLO</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);clear_menu(false);menu(previous,true)">DLY SPEC SAUCE</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);clear_menu(false);menu(previous,true)">FEUGO</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);clear_menu(false);menu(previous,true)">GC CRM SAUCE</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);clear_menu(false);menu(previous,true)">GC RANCHERO</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);clear_menu(false);menu(previous,true)">GREEN CHILE</button>
+			</div>
+			<div class="btn-group" style="left:55.6%;top:8%">
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);clear_menu(false);menu(previous,true)">HATCH</button>
+				<button class="item_button_2" type="button" style="background-image: url('xmark.png');background-size: 70%; background-repeat: no-repeat;background-position: center">HATCH VALLEY</button>
+				<button class="item_button_2" type="button" style="background-image: url('xmark.png');background-size: 70%; background-repeat: no-repeat;background-position: center">MACHO TOMOATILL<br>O</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);clear_menu(false);menu(previous,true)">QUESO BLANCO</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);clear_menu(false);menu(previous,true)">RANCHERO</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);clear_menu(false);menu(previous,true)">RED CHILE</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);clear_menu(false);menu(previous,true)">RICA</button>
+			</div>
+			<div class="btn-group" style="left:60.9%;top:8%">
 				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);clear_menu(false);menu(previous,true)">ROSADO</button>
 				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);clear_menu(false);menu(previous,true)">TEX MEX</button>
 				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);clear_menu(false);menu(previous,true)">TOMATILLO</button>

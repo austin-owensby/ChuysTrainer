@@ -3,7 +3,7 @@ Right now I'm just trying to make the menu interact as it normally would with so
 (No table selection, No payment of checks (maybe later??), etc.) 
 
 Currently Working on:   
-* Special Submenus(1/2 Enchilada/Burrito/Relleno, #4 Combos)
+* Special Submenus(margaritas(swirl))
 
 Upcoming (In no particular order):  
 * Yellow bar functionality
