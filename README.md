@@ -3,15 +3,16 @@ Right now I'm just trying to make the menu interact as it normally would with so
 (No table selection, No payment of checks (maybe later??), etc.) 
 
 Currently Working on:   
-* Special Submenus(margaritas(swirl))
+* Margarita submenu different color
 
-Upcoming (In no particular order):  
+Upcoming (In no particular order): 
+* Modify menu (Bar and Food)
 * Yellow bar functionality
+* Grey bar functionality
 * Order screen format
 * Send
 * Remove last
 * Voiding
 * Reorder
-* Modify menu
 * Previous Screen
 * Time specific stuff (Daily Specials, happy hour)

@@ -171,6 +171,7 @@ function toggle_drink(state){ //Toggle drink menu buttons
 		}
 		else{
 			spec.visibility = 'hidden';
+			arrow(1);
 		}
 	}
 	else{
@@ -185,6 +186,7 @@ function toggle_drink(state){ //Toggle drink menu buttons
 		}
 		else{
 			gin.visibility = 'visible';
+			arrow(2);
 		}
 		if(window.getComputedStyle(document.getElementById('Tacos'), null).getPropertyValue('visibility') == 'visible'){	
 			spec.visibility = 'hidden';
@@ -287,6 +289,25 @@ function add_to_order(ordered_item) { //Add an item to the order screen
 	}
 	document.getElementById("order_screen").innerHTML = order_string;
 	document.getElementById("order_screen").scrollTop = document.getElementById("order_screen").scrollHeight;
+}
+
+function modify(state){
+	if(state){
+		clear_menu(true);
+		for (var i = 0; i < buttons.length; i++) {
+			buttons[i].style.visibility = 'hidden';
+		}
+		Buttons = document.getElementsByClassName('sub_menu');
+		for (var i = 0; i < buttons.length; i++) {
+			Buttons[i].style.visibility = 'hidden';
+		}
+	} 
+	else {
+		clear_menu(false);
+		for (var i = 0; i < buttons.length; i++) {
+			buttons[i].style.visibility = 'visible';
+		}
+	}
 }
 
 var random = Math.floor(Math.random() * (9999 - 1)) + 1; 
