@@ -3,7 +3,6 @@ Right now I'm just trying to make the menu interact as it normally would with so
 (No table selection, No payment of checks (maybe later??), etc.) 
 
 Currently Working on:   
-* Margarita submenu different color
 * Modify menu (Bar and Food)
 
 Upcoming (In no particular order): 

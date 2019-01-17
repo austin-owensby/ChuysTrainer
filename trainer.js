@@ -197,6 +197,8 @@ function toggle_drink(state){ //Toggle drink menu buttons
 	}
 }
 
+var drink_sub_menu = false;
+
 function clear_menu(state){
 	if(state){
 		document.getElementsByClassName('margarita')[0].style.visibility = 'hidden';
@@ -222,9 +224,17 @@ function clear_menu(state){
 		for (var i = 0; i < buttons.length; i++) {
 			buttons[i].style.visibility = 'hidden';
 		}
-		buttons = document.getElementsByClassName('sub_menu');
-		for (var i = 0; i < buttons.length; i++) {
-			buttons[i].style.visibility = 'visible';
+		if(drink_sub_menu){
+			buttons = document.getElementsByClassName('drink_sub_menu');
+			for (var i = 0; i < buttons.length; i++) {
+				buttons[i].style.visibility = 'visible';
+			}
+		}
+		else{
+			buttons = document.getElementsByClassName('sub_menu');
+			for (var i = 0; i < buttons.length; i++) {
+				buttons[i].style.visibility = 'visible';
+			}
 		}
 	} else{
 		document.getElementsByClassName('margarita')[0].style.visibility = 'visible';
@@ -256,6 +266,10 @@ function clear_menu(state){
 			buttons[i].style.visibility = 'hidden';
 		}
 		buttons = document.getElementsByClassName('sub_menu');
+		for (var i = 0; i < buttons.length; i++) {
+			buttons[i].style.visibility = 'hidden';
+		}
+		buttons = document.getElementsByClassName('drink_sub_menu');
 		for (var i = 0; i < buttons.length; i++) {
 			buttons[i].style.visibility = 'hidden';
 		}
@@ -310,6 +324,10 @@ function modify(state){
 			buttons[i].style.visibility = 'hidden';
 		}
 		Buttons = document.getElementsByClassName('sub_menu');
+		for (var i = 0; i < Buttons.length; i++) {
+			Buttons[i].style.visibility = 'hidden';
+		}
+		Buttons = document.getElementsByClassName('drink_sub_menu');
 		for (var i = 0; i < Buttons.length; i++) {
 			Buttons[i].style.visibility = 'hidden';
 		}

@@ -27,20 +27,7 @@ body{
 
 button:focus {outline:0;}
 
-.button,
-.button_2,
-.button_3,
-.button_4,
-.arrow_button,
-.special_button,
-.special_button_2,
-.special_button_3,
-.special_button_4,
-.item_button,
-.item_button_2,
-.modify,
-.beverage,
-.margarita {
+button {
   color: white;
   text-align: center;
   text-decoration: none;
@@ -123,6 +110,11 @@ button:focus {outline:0;}
 
 .item_button_2 {
   background-color: #1a1f49;
+  height: 11.9%;
+}
+
+.item_button_3 {
+  background-color:#7b221a;
   height: 11.9%;
 }
 
