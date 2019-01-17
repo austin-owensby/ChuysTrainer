@@ -26,7 +26,7 @@ function menu(button_name,submenu,special) { //Toggle between menu selections
 	for(var i = 0; i < buttons.length; i++){
 		buttons[i].style.visibility = 'visible';
 	}
-	if(!submenu) toggle_drink(document.getElementById(button_name).className != 'button');
+	if(!submenu && (document.getElementById(button_name).className != 'button_3')) toggle_drink(document.getElementById(button_name).className != 'button');
 	if(special) clear_menu(true);
 	if(button_name == 'COMBO TACOS'){
 		count++;
@@ -291,6 +291,18 @@ function add_to_order(ordered_item) { //Add an item to the order screen
 	document.getElementById("order_screen").scrollTop = document.getElementById("order_screen").scrollHeight;
 }
 
+function remove_last(){
+	order.pop(order.length - 1);
+	var order_string = '';
+	for (var i = 0; i < order.length; i++) {
+		order_string = order_string + order[i] + ' ';
+		if (total[i] != '')
+			order_string = order_string + '$';
+		order_string = order_string + total[i] + '<br>';
+	}
+	document.getElementById("order_screen").innerHTML = order_string;
+}
+
 function modify(state){
 	if(state){
 		clear_menu(true);
@@ -298,8 +310,16 @@ function modify(state){
 			buttons[i].style.visibility = 'hidden';
 		}
 		Buttons = document.getElementsByClassName('sub_menu');
-		for (var i = 0; i < buttons.length; i++) {
+		for (var i = 0; i < Buttons.length; i++) {
 			Buttons[i].style.visibility = 'hidden';
+		}
+		Buttons = document.getElementsByClassName('modify_menu');
+		for (var i = 0; i < Buttons.length; i++) {
+			Buttons[i].style.visibility = 'hidden';
+		}
+		Buttons = document.getElementsByClassName('modify_menu2');
+		for (var i = 0; i < Buttons.length; i++) {
+			Buttons[i].style.visibility = 'visible';
 		}
 	} 
 	else {

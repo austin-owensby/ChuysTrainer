@@ -4,15 +4,15 @@ Right now I'm just trying to make the menu interact as it normally would with so
 
 Currently Working on:   
 * Margarita submenu different color
+* Modify menu (Bar and Food)
 
 Upcoming (In no particular order): 
-* Modify menu (Bar and Food)
 * Yellow bar functionality
 * Grey bar functionality
 * Order screen format
 * Send
-* Remove last
 * Voiding
 * Reorder
 * Previous Screen
 * Time specific stuff (Daily Specials, happy hour)
+* Upcomming Price Change

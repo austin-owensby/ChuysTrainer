@@ -23,7 +23,7 @@
 			<button class="button" id="Tacos" type="button" onclick="menu(this.innerHTML)">Tacos</button>
 			<button class="arrow_button" type="button" id="up_1" onclick="arrow(1)"><img src="arrow_up.png" style="height:100%"></button>
 			<button class="arrow_button" type="button" id="down_1" onclick="arrow(1)"><img src="arrow_up.png" style="height:100%;transform:scaleY(-1)"></button>
-			<button class="modify drink_menu" type="button" onclick="modify(true)">MODIFY</button>
+			<button class="modify drink_menu" type="button" onclick="modify(true);menu('A-E')">MODIFY</button>
 			<button class="special_button drink_menu" type="button">SPEC INSTRUCTIO</button>
 			<button class="special_button drink_menu" type="button">$$OPEN FOOD</button>
 			<div class="btn-subgroup" id="food_subgroup">
@@ -804,7 +804,7 @@
 				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('OrangeLiq',true,true)">Herr Repo<br> 2.50</button>
 				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('OrangeLiq',true,true)">Herr Silver <br> 1.50</button>
 				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('OrangeLiq',true,true)">Hornitos Plata<br> 2.50</button>
-				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('OrangeLiq',true,true)">Hornitos Repo <br> 1.50</button>
+				<button class="item_button_2" type="button" style="background-image: url('xmark.png');background-size: 70%; background-repeat: no-repeat;background-position: center">Hornitos Repo <br> 1.50</button>
 				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('OrangeLiq',true,true)">Hussong <br> 2.50</button>
 				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('OrangeLiq',true,true)">Maestro Dobel <br> 2.50</button>
 				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML);menu('OrangeLiq',true,true)">Patron Anejo<br>2.50</button>
@@ -1132,43 +1132,153 @@
 			<button class="button_4 Margaritas 1/2Margaritas" type="button" style="position:absolute;top:88%;left:69.5%;width:7%;height:7.5%;color:red;visibility:hidden">Floaters</button>
 		</div>
 		<div class="sub_menu" style="visibility:hidden">
-			<p class = "top_2" style="left:45%;width:31.5%;top:-2.5%;height:7%;background-color:yellow">*Entry Required*</p>
+			<p class = "top_2" style="left:45%;width:31.5%;top:-3.7%;height:7%;background-color:yellow;font-size:1.5em;line-height:2">*Entry Required*</p>
 			<button class="item_button_2" type="button" style="background-color:lightgrey;position:absolute;top:86%;left:45%;width:5.1%;height:10%;"></button>
-			<button class="special_button_2" type="button" style="height:10%;position:absolute;top:86%;left:50.3%;width:29.5%;font-weight:bold;font-size:15px">Done</button>
+			<button class="special_button_2" type="button" style="height:10%;position:absolute;top:86%;left:50.3%;width:29.5%;font-weight:bold;font-size:1.5em">Done</button>
 			<button class="special_button" type="button" style="position:absolute;top:78%;left:71.5%;width:5.2%">SPEC INSTRUCTIO</button>
 			<button class="special_button" type="button" style="position:absolute;top:78%;left:66.2%;width:5.2%;background-color:#c27271" onclick="add_to_order(this.innerHTML)">Sauce on Side</button>
 		</div>
-		<div class="btn-group" style="left:20.2%;top:74.5%">
-			<button class="button_3" type="button" style="background-color:#b29e7d;color:black">G1</button>
+		<div class="btn-group modify_menu" style="left:20.2%;top:74.5%">
+			<button class="button_3" type="button" style="background-color:#b29e7d;color:black;font-size:1em">G1</button>
 			<button class="button_3" type="button" style="background-color:#d3bda8;color:#826651">Emp Funk</button>
 			<button class="button_3" type="button" style="background-color:#b29e7d;color:black">Edit Guests</button>
 		</div>
-		<div class="btn-group" style="left:25.5%;top:74.5%">
+		<div class="btn-group modify_menu" style="left:25.5%;top:74.5%">
 			<button class="button_3" type="button" style="background-color:#b29e7d;color:black">Next Guest</button>
 			<button class="button_3" type="button" style="background-color:#b29e7d;color:black">View Guests</button>
 			<button class="button_3" type="button" style="background-color:#bfb4b8;color:black">Gsts</button>
 		</div>
-		<button class="button_3"type="button" style="background-color:#a7b6cb;color:black;position:absolute;top:74.5%;left:30.8%;width:3.5%;height:21%">Split Check</button>
-		<div class="btn-group" style="left:34.5%;top:74.5%">
+		<button class="button_3 modify_menu"type="button" style="background-color:#a7b6cb;color:black;position:absolute;top:74.5%;left:30.8%;width:3.5%;height:21%">Split Check</button>
+		<div class="btn-group modify_menu" style="left:34.5%;top:74.5%">
 			<button class="special_button_2" type="button">Order</button>
 			<button class="special_button_2" type="button">Prt Filtered Gst</button>
 			<button class="special_button_2" type="button">Prt All Gsts</button>
 		</div>
-		<div class="btn-group" style="left:39.7%;top:74.5%">
-			<button class="special_button_2" type="button" style="height:15%">Send</button>
-			<button class="special_button_2" type="button">Print C</button>
+		<div class="btn-group modify_menu" style="left:39.7%;top:74.5%">
+			<button class="special_button_2" type="button" style="height:15.5%;font-size:1em">Send</button>
+			<button class="special_button_2" type="button" style="font-size:1em">Print C</button>
 		</div>
-		<div class="btn-group" style="left:76.7%;width:3%;height:128%">
+		<div class="btn-group modify_menu2" style="left:37.7%;top:74.5%;visibility:hidden">
+			<button class="special_button_2" type="button" style="height:11.5%;font-size:1em">Send</button>
+			<button class="special_button_2" type="button" style="height:11.5%;font-size:1em">Print C</button>
+		</div>
+		<div class="btn-group modify_menu2" style="left:45%;visibility:hidden">
+			<button class="button_3" id="A-E" type="button" style="background-color:#b29e7d;color:black" onclick="menu(this.innerHTML)">A-E</button>
+			<button class="button_3" id="Action Mods" type="button" style="background-color:#d3bda8;color:#826651" onclick="menu(this.innerHTML)">Action Mods</button>
+			<button class="button_3" id="Sauce" type="button" style="background-color:#d3bda8;color:#826651" onclick="menu(this.innerHTML)">Sauce</button>
+		</div>
+		<div class="btn-group modify_menu2" style="left:52.3%;visibility:hidden">
+			<button class="button_3" id="F-K" type="button" style="background-color:#b29e7d;color:black" onclick="menu(this.innerHTML)">F-K</button>
+			<button class="button_3" id="$$ADDS" type="button" style="background-color:#d3bda8;color:#826651" onclick="menu(this.innerHTML)">$$ADDS</button>
+			<button class="button_3" id="Tortilla" type="button" style="background-color:#d3bda8;color:#826651" onclick="menu(this.innerHTML)">Tortilla</button>
+		</div>
+		<div class="btn-group modify_menu2" style="left:59.6%;visibility:hidden">
+			<button class="button_3" id="L-R" type="button" style="background-color:#b29e7d;color:black" onclick="menu(this.innerHTML)">L-R</button>
+			<button class="button_3" id="A La Carte" type="button" style="background-color:#d3bda8;color:#826651" onclick="menu(this.innerHTML)">A La Carte</button>
+			<button class="button_3" id="Dressing" type="button" style="background-color:#d3bda8;color:#826651" onclick="menu(this.innerHTML)">Dressing</button>
+		</div>
+		<div class="btn-group modify_menu2" style="left:66.9%;visibility:hidden">
+			<button class="button_3" id="S-Z" type="button" style="background-color:#b29e7d;color:black" onclick="menu(this.innerHTML)">S-Z</button>
+			<button class="button_3" id="Rice & Beans" type="button" style="background-color:#d3bda8;color:#826651" onclick="menu(this.innerHTML)">Rice & Beans</button>
+			<button class="button_3" id="Sides" type="button" style="background-color:#d3bda8;color:#826651" onclick="menu(this.innerHTML)">Sides</button>
+		</div>
+		<div class="btn-group modify_menu" style="left:76.7%;width:3%;height:128%">
 			<button class="modify" type="button" style="color:black;height:4.8%">Cancel</button>
 			<button class="button_3" type="button" style=" background-color:#2e3b31;">Pay</button>
 			<button class="button_4" type="button">Prev. Screen</button>
 			<button class="button_3" type="button" style=" background-color:#692d2d;">Void</button>
-			<button class="special_button" type="button">Remov e Last</button>
+			<button class="special_button" type="button" onclick="remove_last()">Remov e Last</button>
 			<button class="button_3" type="button" style="background-color:#dbc5b8"><img src="check.png" style="width:100%"></button>
 			<button class="button_3" type="button" style="background-color:#dbc5b8"><img src="xmark.png" style="width:100%"></button>
 			<button class="button_3" type="button" style="background-color:#dbc5b8"></button>
 			<button class="button_3" type="button" style="background-color:#dbc5b8"></button>
 			<button class="button_4" id="reorder" type="button">Reorde r</button>
+		</div>
+		<div class="btn-group modify_menu2" style="left:76.7%;width:3%;height:137%;visibility:hidden">
+			<button class="modify" type="button" style="color:black">Cancel</button>
+			<button class="button_3" type="button" style=" background-color:#2e3b31;">Pay</button>
+			<button class="button_4" type="button">Prev. Screen</button>
+			<button class="button_3" type="button" style=" background-color:#692d2d;">Void</button>
+			<button class="special_button" type="button" onclick="remove_last()">Remov e Last</button>
+			<button class="button_3" type="button" style="background-color:white;color:black">ENTER<img src="check.png" style="width:100%"></button>
+			<button class="button_3" type="button" style="background-color:white;color:black">CLEAR<img src="xmark.png" style="width:100%"></button>
+			<button class="button_3" type="button" style="background-color:white"></button>
+			<button class="button_3" type="button" style="background-color:white"></button>
+		</div>
+		<div class="modify_menu2" style="width:31.5%;position:absolute;left:45%;top:21.5%;height:90%;visibility:hidden;z-index:-1">
+				<button class="button_4" type="button" onclick="add_to_order(this.innerHTML)" style="float:left;width:12%;color:white">All</button>
+				<button class="button_4" type="button" onclick="add_to_order(this.innerHTML)" style="float:left;width:12%;color:white">Cut</button>
+				<button class="button_4" type="button" onclick="add_to_order(this.innerHTML)" style="float:left;width:12%;color:white">Extra</button>
+				<button class="button_4" type="button" onclick="add_to_order(this.innerHTML)" style="float:left;width:12%;color:white">Light</button>
+				<button class="button_4" type="button" onclick="add_to_order(this.innerHTML)" style="float:left;width:16%;color:white">On Side</button>
+				<button class="button_4" type="button" onclick="add_to_order(this.innerHTML)" style="float:left;width:16%;color:white">With</button>
+				<button class="button_4" type="button" onclick="add_to_order(this.innerHTML)" style="float:left;width:20%;color:white">TO GO</button>
+		</div>
+		<div class="A-E" style="visibility:hidden">
+			<div class="btn-group" style="left:45%;top:28.5%">
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML)" style="background-color:#b29e7d;color:black">ALLERGY</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML)" style="background-color:#b29e7d;color:black">AS Entree</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML)" style="background-color:#b29e7d;color:black">Avacado</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML)" style="background-color:#b29e7d;color:black">Bean/Cz Only</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML)" style="background-color:#b29e7d;color:black">Beef</button>
+			</div>
+			<div class="btn-group" style="left:50.3%;top:28.5%">
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML)" style="background-color:#b29e7d;color:black">Beef/Chz Only</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML)" style="background-color:#b29e7d;color:black">Bell Peppers</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML)" style="background-color:#b29e7d;color:black">Blue Corn Tort</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML)" style="background-color:#b29e7d;color:black">Cabbage</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML)" style="background-color:#b29e7d;color:black">Caramel</button>
+			</div>
+			<div class="btn-group" style="left:55.6%;top:28.5%">
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML)" style="background-color:#b29e7d;color:black">Carrot</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML)" style="background-color:#b29e7d;color:black">Chalupa</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML)" style="background-color:#b29e7d;color:black">Charros</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML)" style="background-color:#b29e7d;color:black">Cheese</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML)" style="background-color:#b29e7d;color:black">Cheese Jack</button>
+			</div>
+			<div class="btn-group" style="left:60.9%;top:28.5%">
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML)" style="background-color:#b29e7d;color:black">Cheese Mixed</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML)" style="background-color:#b29e7d;color:black">Chick Dilla</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML)" style="background-color:#b29e7d;color:black">Chicken</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML)" style="background-color:#b29e7d;color:black">Chiles</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML)" style="background-color:#b29e7d;color:black">Chipotle</button>
+			</div>
+			<div class="btn-group" style="left:66.2%;top:28.5%">
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML)" style="background-color:#b29e7d;color:black">Cilantro</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML)" style="background-color:#b29e7d;color:black">Ck/Cz Only</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML)" style="background-color:#b29e7d;color:black">Cond Plate</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML)" style="background-color:#b29e7d;color:black">Corn</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML)" style="background-color:#b29e7d;color:black">Corn Tort</button>
+			</div>
+			<div class="btn-group" style="left:71.5%;top:28.5%">
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML)" style="background-color:#b29e7d;color:black">Creme Fraiche</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML)" style="background-color:#b29e7d;color:black">Crispy</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML)" style="background-color:#b29e7d;color:black">Cucumber</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML)" style="background-color:#b29e7d;color:black">Dbl Charro</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML)" style="background-color:#b29e7d;color:black">Dbl GC Rice</button>
+			</div>
+		</div>
+		<div class="F-K" style="visibility:hidden">
+			<div class="btn-group" style="left:45%;top:28.5%">
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML)" style="background-color:#b29e7d;color:black">Faj Ck</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML)" style="background-color:#b29e7d;color:black">Fish</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML)" style="background-color:#b29e7d;color:black">Flauta</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML)" style="background-color:#b29e7d;color:black">Flour Tortilla</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML)" style="background-color:#b29e7d;color:black">Fried</button>
+			</div>
+			<div class="btn-group" style="left:50.3%;top:28.5%">
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML)" style="background-color:#b29e7d;color:black">Fries</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML)" style="background-color:#b29e7d;color:black">Garnish</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML)" style="background-color:#b29e7d;color:black">GC Rice</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML)" style="background-color:#b29e7d;color:black">Green Chile</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML)" style="background-color:#b29e7d;color:black">Grilled</button>
+			</div>
+			<div class="btn-group" style="left:55.6%;top:28.5%">
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML)" style="background-color:#b29e7d;color:black">Guac</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML)" style="background-color:#b29e7d;color:black">Hatch</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML)" style="background-color:#b29e7d;color:black">Japs</button>
+				<button class="item_button_2" type="button" onclick="add_to_order(this.innerHTML)" style="background-color:#b29e7d;color:black">Ketchup</button>
+			</div>
 		</div>
 		<div class="total_box">
 		<p style="position:absolute;left:5%">Subtotal</p>
